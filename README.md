@@ -10,7 +10,7 @@ O objetivo do projeto é desenvolver um sistema de combate em turno queserá apl
 
 ## Tecnologias Utilizadas :gear:
 - JAVA
-<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title = "JAVA"/></code>
+<code><img   width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title = "JAVA"/></code>
 
 ## Discentes :pushpin:
 
