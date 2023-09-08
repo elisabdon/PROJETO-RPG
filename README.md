@@ -10,7 +10,7 @@ O objetivo do projeto é desenvolver um sistema de combate em turno queserá apl
 
 ## Tecnologias Utilizadas :gear:
 - JAVA
-- [Kaggle](https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023): forneceu um conjunto de dados para a análise 
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javas/java-original.svg" title = "JAVA"/></code>
 
 ## Discentes :pushpin:
 
