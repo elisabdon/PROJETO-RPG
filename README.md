@@ -1,29 +1,23 @@
-# PROJETO-RPG-JJBA
+# JJBA - RPG 🔮🗡:bar_chart:
 
-✨JJBA✨  - Jogo avaliativo pedido em JAVA para o curso de engenharia da computação • Cesupa
+Projeto Prático do segundo semestre do curso de Engenharia da Computação da matéria de **Programação 2** do [Centro Universitário do Estado do Pará](https://www.cesupa.br/).
 
+## Resumo :open_book:
 
-## Professor: 
-Pedro Henrique Sales Girotto
+Role-Playing Game, também conhecido como RPG, é um tipo de jogo em que os jogadores assumem papéis de personagens e criam narrativas colaborativamente. O progresso de um jogo se dá de acordo com um sistema de regras predeterminado, dentro das quais os jogadores podem improvisar livremente.
 
+## Tecnologias Utilizadas :gear:
+- JAVA
+- [Kaggle](https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023): forneceu um conjunto de dados para a análise 
 
-## INTRODUÇÃO:
-Role-Playing Game, também conhecido como RPG, é um tipo de jogo em
-que os jogadores assumem papéis de personagens e criam narrativas
-colaborativamente. O progresso de um jogo se dá de acordo com um sistema de
-regras predeterminado, dentro das quais os jogadores podem improvisar
-livremente.
-
-
-## PARTICIPANTES: 
+## Discentes :pushpin:
 
 ## Elissandra Bernadett Abdon Nascimento
-
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:)
 
 ## Renan Abreu de Almeida
-
 [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RenanAbreu09)
+  
+## Docente :man_teacher: 
 
-
-
+- Pedro Henrique Sales Girotto
