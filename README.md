@@ -6,6 +6,8 @@ Projeto Prático do segundo semestre do curso de Engenharia da Computação da m
 
 Role-Playing Game, também conhecido como RPG, é um tipo de jogo em que os jogadores assumem papéis de personagens e criam narrativas colaborativamente. O progresso de um jogo se dá de acordo com um sistema de regras predeterminado, dentro das quais os jogadores podem improvisar livremente.
 
+O objetivo do projeto é desenvolver um sistema de combate em turno queserá aplicado em um jogo de JRPG.
+
 ## Tecnologias Utilizadas :gear:
 - JAVA
 - [Kaggle](https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023): forneceu um conjunto de dados para a análise 
