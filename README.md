@@ -1,4 +1,4 @@
-# JJBA - RPG 🔮🗡:bar_chart:
+# JJBA - RPG 🔮🗡
 
 Projeto Prático do segundo semestre do curso de Engenharia da Computação da matéria de **Programação 2** do [Centro Universitário do Estado do Pará](https://www.cesupa.br/).
 
