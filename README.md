@@ -9,16 +9,17 @@ Role-Playing Game, também conhecido como RPG, é um tipo de jogo em que os joga
 O objetivo do projeto é desenvolver um sistema de combate em turno queserá aplicado em um jogo de JRPG.
 
 ## Tecnologias Utilizadas :gear:
-- JAVA
 <code><img   width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title = "JAVA"/></code>
 
 ## Discentes :pushpin:
 
 Elissandra Bernadett Abdon Nascimento
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:)
+
+   [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:)
 
 Renan Abreu de Almeida
-[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RenanAbreu09)
+
+   [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RenanAbreu09)
   
 ## Docente :man_teacher: 
 
