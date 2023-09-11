@@ -14,10 +14,10 @@ O objetivo do projeto é desenvolver um sistema de combate em turno queserá apl
 
 ## Discentes :pushpin:
 
-## Elissandra Bernadett Abdon Nascimento
+Elissandra Bernadett Abdon Nascimento
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:)
 
-## Renan Abreu de Almeida
+Renan Abreu de Almeida
 [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RenanAbreu09)
   
 ## Docente :man_teacher: 
