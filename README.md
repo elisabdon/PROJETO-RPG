@@ -1,5 +1,7 @@
 # PROJECT- RPG 🔮🗡
 
+![Universo](https://revistadigital.com.br/wp-content/uploads/2023/03/Qual-a-maior-galaxia-do-universo.webp)
+
 Projeto Prático do segundo semestre do curso de Engenharia da Computação da matéria de **Programação 2** do [Centro Universitário do Estado do Pará](https://www.cesupa.br/).
 
 ## Resumo :open_book:
