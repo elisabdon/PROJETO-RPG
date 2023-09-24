@@ -10,8 +10,6 @@ Projeto Prático do segundo semestre do curso de Engenharia da Computação da m
 <p align="center">
   <img src="https://i.gifer.com/origin/6a/6aeb60530c03312868ad338b80404870.gif" alt="GIF">
 </p>
-
-  ![GIF](https://i.gifer.com/origin/6a/6aeb60530c03312868ad338b80404870.gif)
   
 ## --------------------------------------------------------------------------------------------------------
 
