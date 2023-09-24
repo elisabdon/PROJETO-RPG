@@ -16,6 +16,29 @@ Projeto Prático do segundo semestre do curso de Engenharia da Computação da m
 
 ## Resumo :open_book:
 
+<p align="center">
+  <img src="https://github.com/seu-usuario">
+</p>
+
+<h1 align="center">Perfil de RPG de Aventura</h1>
+
+<p align="center">Estatísticas do Jogo:</p>
+
+<table align="center">
+  <tr>
+    <th>Aventura</th>
+    <th>Combate</th>
+    <th>Ação</th>
+    <th>Emoção</th>
+  </tr>
+  <tr>
+    <td align="center">80%</td>
+    <td align="center">85%</td>
+    <td align="center">50%</td>
+    <td align="center">100%</td>
+  </tr>
+</table>
+
 Role-Playing Game, também conhecido como RPG, é um tipo de jogo em que os jogadores assumem papéis de personagens e criam narrativas colaborativamente. O progresso de um jogo se dá de acordo com um sistema de regras predeterminado, dentro das quais os jogadores podem improvisar livremente.
 
 O objetivo do projeto é desenvolver um sistema de combate em turno queserá aplicado em um jogo de JRPG.
