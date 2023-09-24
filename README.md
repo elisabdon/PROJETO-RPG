@@ -7,7 +7,7 @@ Projeto Prático do segundo semestre do curso de Engenharia da Computação da m
 ## --------------------------------------------------------------------------------------------------------
 <h4 align="center">
   
-![Jogar](https://i.gifer.com/origin/6a/6aeb60530c03312868ad338b80404870.gif)
+![GIF](https://i.gifer.com/origin/6a/6aeb60530c03312868ad338b80404870.gif)
   
 ## --------------------------------------------------------------------------------------------------------
 
