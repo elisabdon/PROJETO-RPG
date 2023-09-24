@@ -7,7 +7,7 @@ Projeto Prático do segundo semestre do curso de Engenharia da Computação da m
 ## --------------------------------------------------------------------------------------------------------
 <h4 align="center">
   
-![Jogar](https://img.freepik.com/vetores-gratis/sala-de-jogador-plana-organica-ilustrada_23-2148919928.jpg)
+![Jogar](https://i.gifer.com/origin/6a/6aeb60530c03312868ad338b80404870.gif)
   
 ## --------------------------------------------------------------------------------------------------------
 
