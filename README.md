@@ -1,7 +1,5 @@
 # PROJECT- RPG 🔮🗡
 
-<h4 align="center">
-  
 ![Jogar](https://img.freepik.com/vetores-gratis/sala-de-jogador-plana-organica-ilustrada_23-2148919928.jpg)
 
 Projeto Prático do segundo semestre do curso de Engenharia da Computação da matéria de **Programação 2** do [Centro Universitário do Estado do Pará](https://www.cesupa.br/).
