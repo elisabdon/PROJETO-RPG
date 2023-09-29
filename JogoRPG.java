@@ -382,3 +382,4 @@ public class JogoRPG {
         return random.nextInt(6) + 1;
     }
 }
+
