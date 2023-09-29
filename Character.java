@@ -2,7 +2,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Character {
-    private String nome;
     private int pv;
     private int forca;
     private int constituicao;
@@ -10,17 +9,15 @@ public class Character {
     private int destreza;
     private Weapon weapon;
     private Armor armor;
-    private boolean defesaDobrada;
-
+    
     public Character(String nome) {
-        this.nome = nome;
         this.forca = 0;
         this.constituicao = 0;
         this.agilidade = 0;
         this.destreza = 0;
         this.pv = 0;
     }
-
+    
     public void distribuirPontos(int pontos) {
         try (Scanner scanner = new Scanner(System.in)) {
             while (pontos > 0) {
@@ -30,10 +27,10 @@ public class Character {
                 System.out.println("3. Adicionar pontos em Agilidade");
                 System.out.println("4. Adicionar pontos em Destreza");
                 System.out.println("5. Finalizar distribuição");
-
+    
                 int escolha = scanner.nextInt();
                 int pontosEscolhidos;
-
+    
                 switch (escolha) {
                     case 1:
                         System.out.print("Digite a quantidade de pontos de Força a adicionar: ");
@@ -86,23 +83,23 @@ public class Character {
                 }
             }
         }
-
+    
         pv = rolarD6() + rolarD6() + rolarD6() + constituicao;
     }
-
+    
     private int rolarD6() {
         Random random = new Random();
         return random.nextInt(6) + 1;
     }
-
+    
     public void equiparArma(Weapon weapon) {
         this.weapon = weapon;
     }
-
+    
     public void equiparArmadura(Armor armor) {
         this.armor = armor;
     }
-
+    
     public int calcularDano() {
         if (weapon != null) {
             if (weapon.getCategoria().equals("pesada")) {
@@ -117,17 +114,17 @@ public class Character {
             return 0;
         }
     }
-
+    
     private int rolarD12() {
         Random random = new Random();
         return random.nextInt(12) + 1;
     }
-
+    
     private int rolarD4() {
         Random random = new Random();
         return random.nextInt(4) + 1;
     }
-
+    
     public int calcularDefesa() {
         if (armor != null) {
             int constanteDefesa = armor.getConstanteDefesa();
@@ -137,11 +134,11 @@ public class Character {
             return 0;
         }
     }
-
+    
     public int getPV() {
         return pv;
     }
-
+    
     public int getAgilidade() {
         return agilidade;
     }
@@ -158,11 +155,11 @@ public class Character {
         return null;
     }
 
-    public String getDestreza() {
+    public Weapon getWeapon() {
         return null;
     }
 
-    public Weapon getWeapon() {
+    public String getDestreza() {
         return null;
     }
 
@@ -175,4 +172,6 @@ public class Character {
     public boolean isDefesaDobrada() {
         return false;
     }
+    
+    // Outros métodos getters e setters para os atributos necessários
 }
