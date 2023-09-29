@@ -5,7 +5,7 @@ public class JogoRPG {
     public static void main(String[] args, Scanner scanner2) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Bem-vindo ao Reino de Faeloria!");
+        System.out.println("SEJA BEM VINDO");
         System.out.println("");
 
         int opcao;
@@ -14,19 +14,19 @@ public class JogoRPG {
         int nivelJogador = 0;
 
         do {
-            System.out.println("Menu Principal");
-            System.out.println("1. Começar Jogo");
-            System.out.println("2. História do Jogo");
-            System.out.println("3. Fechar Jogo");
+            System.out.println("MENU PRINCIPAL");
+            System.out.println("1. COMECAR JOGO");
+            System.out.println("2. HISTORIA DO JOGO");
+            System.out.println("3. FECHAR JOGO");
             System.out.println("");
-            System.out.print("Opção: ");
+            System.out.print("OPÇÃO: ");
 
             if (scanner.hasNextInt()) {
                 opcao = scanner.nextInt();
 
                 switch (opcao) {
                     case 1:
-                        System.out.println("Você Selecionou Começar Jogo.");
+                        System.out.println("VAMOS COMEÇAR.");
                         System.out.println("");
                         nivelJogador = 0;
                         character = criarPersonagem(scanner2);
@@ -34,46 +34,46 @@ public class JogoRPG {
                             Adversary adversary = gerarAdversarioAleatorio(nivelJogador);
                             combate(character, adversary, potion);
                             if (character.getPV() <= 0) {
-                                System.out.println("FALECEU, foi pro inferno.");
+                                System.out.println("VOCÊ MORREU.");
                                 System.out.println("");
                                 break;
                             } else {
                                 nivelJogador++;
                             }
                             if (nivelJogador == 1 && character.getPV() > 0) {
-                                System.out.println("Você subiu de nível!");
-                                System.out.println("Você recebeu 5 pontos de atributo adicionais.");
+                                System.out.println("VOCÊ SUBIU DE NIVEL!");
+                                System.out.println("VOCÊ RECEBEU 5 PONTOS DE ATRIBUTOS.");
                                 character.distribuirPontos(5);
-                                System.out.println("Escolha uma nova arma:");
+                                System.out.println("ESCOLHA UMA ARMA NOVA:");
                                 Weapon novaArma = escolherArma(nivelJogador, scanner);
                                 character.equiparArma(novaArma);
                             } else if (nivelJogador == 2 && character.getPV() > 0) {
-                                System.out.println("Você subiu de nível!");
-                                System.out.println("Você recebeu 10 pontos de atributo adicionais.");
+                                System.out.println("VOCÊ SUBIU DE NIVEL!");
+                                System.out.println("VOCÊ RECEBEU 10 PONTOS DE ATRIBUTOS.");
                                 character.distribuirPontos(10);
-                                System.out.println("Escolha uma nova armadura:");
+                                System.out.println("ESCOLHA UMA ARMA:");
                                 System.out.println("");
                                 Armor novaArmadura = escolherArmadura(nivelJogador, scanner);
                                 character.equiparArmadura(novaArmadura);
                             } else if (nivelJogador == 3 && character.getPV() > 0) {
-                                System.out.println("Você venceu o jogo! Parabéns!\n");
+                                System.out.println("VOCÊ VENCEU!\n");
                                 break;
                             }
                         }
                         character = null;
                         break;
                     case 2:
-                        System.out.println("Você Selecionou História do Jogo.");
+                        System.out.println("HISTORIA SELECIONADA.");
                         historiaDoJogo(scanner);
                         break;
                     case 3:
-                        System.out.println("Você Selecionou para Fechar o Jogo.");
+                        System.out.println("FECHANDO O JOGO.");
                         break;
                     default:
-                        System.out.println("Opção inválida.");
+                        System.out.println("OPÇÃO INVALIDA.");
                 }
             } else {
-                System.out.println("Opção inválida. Digite um número.");
+                System.out.println("OPÇÃO INVALIDA");
                 scanner.nextLine(); // Limpa a entrada inválida
                 opcao = 0; // Defina uma opção inválida para entrar no loop novamente
             }
@@ -83,75 +83,75 @@ public class JogoRPG {
     }
 
     private static Character criarPersonagem(Scanner scanner) {
-        System.out.print("Digite o nome do seu personagem: ");
+        System.out.print("DIGITE SEU NOME ");
         scanner.nextLine(); // Limpa o buffer
         String nome = scanner.nextLine();
 
         Character character = new Character(nome);
 
-        System.out.println("Distribua 18 pontos nos atributos:");
+        System.out.println("DISTRIBUA SEUS 18 PONTOS DE ATRIBUTOS:");
         character.distribuirPontos(18);
 
-        System.out.println("Escolha uma arma inicial:");
+        System.out.println("ESCOLHA UMA ARMA LEGAL PARA COMEÇAR:");
         Weapon armaInicial = escolherArma(0, scanner);
         character.equiparArma(armaInicial);
 
-        System.out.println("Escolha uma armadura inicial:");
+        System.out.println("ESCOLHA UMA ARMADURA LEGAL PARA COMEÇAR:");
         Armor armaduraInicial = escolherArmadura(0, scanner);
         character.equiparArmadura(armaduraInicial);
 
-        System.out.println("Personagem criado com sucesso!");
-        System.out.println("Nome: " + character.getNome());
-        System.out.println("Pontos de Vida (PV): " + character.getPV());
-        System.out.println("Força: " + character.getForca());
-        System.out.println("Constituição: " + character.getConstituicao());
-        System.out.println("Agilidade: " + character.getAgilidade());
-        System.out.println("Destreza: " + character.getDestreza());
-        System.out.println("Arma Equipada: " + character.getWeapon().getCategoria());
-        System.out.println("Dano da Arma Equipada: " + character.calcularDano());
-        System.out.println("Armadura Equipada: Defesa " + character.calcularDefesa());
+        System.out.println("PERSONAGEM COMPLETOPersonagem criado com sucesso!");
+        System.out.println("NOME: " + character.getNome());
+        System.out.println("PONTOS DE VIDA (PV): " + character.getPV());
+        System.out.println("FORÇA: " + character.getForca());
+        System.out.println("CONSTITUIÇÃO: " + character.getConstituicao());
+        System.out.println("AGILIDADE: " + character.getAgilidade());
+        System.out.println("DESTREZA: " + character.getDestreza());
+        System.out.println("ARMA EQUIPADA: " + character.getWeapon().getCategoria());
+        System.out.println("DANO DA ARMA: " + character.calcularDano());
+        System.out.println("ARMADURA EQUIPADA: DEFESA " + character.calcularDefesa());
 
         return character;
     }
 
     private static Weapon escolherArma(int nivel, Scanner scanner) {
         if (nivel == 0) {
-            System.out.println("Escolha uma arma:");
-            System.out.println("1. Machado Grande - Pesada (Dano: 5)");
-            System.out.println("2. Espada Longa - Média (Dano: 4)");
-            System.out.println("3. Espada Curta - Leve (Dano: 3)");
+            System.out.println("ESCOLHA A ARMA MAIS LEGAL PARA VOCÊ:");
+            System.out.println("1. MACHADO DE GUERRA - FORTE (DANO: 5)");
+            System.out.println("2. ESPADA ANTIGA - MÉDIO (DANO: 4)");
+            System.out.println("3. FACAS AFIADAS - LEVE (DANO: 3)");
 
             int escolha = scanner.nextInt();
 
             switch (escolha) {
                 case 1:
-                    return new Weapon("pesada", 5);
+                    return new Weapon("FORTE", 5);
                 case 2:
-                    return new Weapon("media", 4);
+                    return new Weapon("MÉDIO", 4);
                 case 3:
-                    return new Weapon("leve", 3);
+                    return new Weapon("LEVE", 3);
                 default:
-                    System.out.println("Opção inválida, a arma pesada foi escolhida por padrão.");
-                    return new Weapon("pesada", 5);
+                    System.out.println("OPÇÃO INVALIDA, O MACHADO DE GUERRA FOI SELECIONADO.");
+                    return new Weapon("FORTE", 5);
             }
         } else if (nivel == 1) {
-            System.out.println("Escolha uma arma:");
-            System.out.println("1. Espada Vorpal (Dano: 9)");
-            System.out.println("2. Martelo Mjolnir (Dano: 7)");
-            System.out.println("3. Espada Flamejante (Dano: 5)");
+            System.out.println("ESCOLHA A ARMA MAIS LEGAL PARA VOCÊ:");
+            System.out.println("1. W (SIM, ISSO É UMA ARMA) (DANO: 9)");
+            System.out.println("2. KATANA (DANO: 7)");
+            System.out.println("3. PORRETE DESTRUIDOR (DANO: 5)");
 
             int escolha2 = scanner.nextInt();
 
             switch (escolha2) {
                 case 1:
-                    return new Weapon("pesada", 9);
+                    return new Weapon("FORTE", 9);
                 case 2:
-                    return new Weapon("media", 7);
+                    return new Weapon("MÉDIA", 7);
                 case 3:
-                    return new Weapon("leve", 5);
+                    return new Weapon("LEVE", 5);
                 default:
-                    System.out.println("Opção inválida, a arma pesada foi escolhida por padrão.");
-                    return new Weapon("pesada", 9);
+                    System.out.println("OPÇÃO INVALIDA, W FOI SELECIONADO.");
+                    return new Weapon("FORTE", 9);
             }
         }
         return null;
@@ -159,10 +159,10 @@ public class JogoRPG {
 
     private static Armor escolherArmadura(int nivel, Scanner scanner) {
         if (nivel == 0) {
-            System.out.println("Escolha uma armadura:");
-            System.out.println("1. Couraça de Couro - Leve (Defesa: 3)");
-            System.out.println("2. Couraça de Peles - Média (Defesa: 4)");
-            System.out.println("3. Couraça de Escamas - Pesada (Defesa: 5)");
+            System.out.println("ESCOLHA A ARMADURA:");
+            System.out.println("1. ARMADURA DE COURO - LEVE (DEFESA: 3)");
+            System.out.println("2. ARMADURA DE MALHA - MÉDIO (DEFESA: 4)");
+            System.out.println("3. ARMADURA DE FERRO - FORTE (DEFESA: 5)");
 
             int escolha = scanner.nextInt();
 
@@ -174,14 +174,14 @@ public class JogoRPG {
                 case 3:
                     return new Armor(5);
                 default:
-                    System.out.println("Opção inválida, a armadura leve foi escolhida por padrão.");
+                    System.out.println("OPÇÃO INVALIDA, ARMADURA DE COURO SELECIONADA");
                     return new Armor(3);
             }
         } else if (nivel == 2) {
-            System.out.println("Escolha uma armadura:");
-            System.out.println("1. Cota de Malha (Defesa: 7)");
-            System.out.println("2. Armadura de Couro Elfo (Defesa: 8)");
-            System.out.println("3. Armadura de Malha do Dragão (Defesa: 9)");
+            System.out.println("ESCOLHA SUA AARMADURA:");
+            System.out.println("1. BLUSA FLORIDA DO GIROTTO (DEFESA: 7)");
+            System.out.println("2. ARMADURA SOMBRIA (DEFESA: 8)");
+            System.out.println("3. MANTO SAGRADO (DEFESA: 9)");
 
             int escolha2 = scanner.nextInt();
 
@@ -193,7 +193,7 @@ public class JogoRPG {
                 case 3:
                     return new Armor(9);
                 default:
-                    System.out.println("Opção inválida, a armadura leve foi escolhida por padrão.");
+                    System.out.println("OPÇÃO INVALIDA, A BLUSA FLORIDA DO GIROTTO FOI SELECIONADA.");
                     return new Armor(7);
             }
         }
@@ -225,43 +225,43 @@ public class JogoRPG {
 
             switch (escolha) {
                 case 0:
-                    return new Adversary("Goblin Ladrão", 40, 16, 3, 2);
+                    return new Adversary("GOBLIN", 40, 16, 3, 2);
                 case 1:
-                    return new Adversary("Diabrete", 30, 12, 2, 3);
+                    return new Adversary("LADRÃO", 30, 12, 2, 3);
                 case 2:
-                    return new Adversary("Orc", 50, 20, 4, 1);
+                    return new Adversary("OGRO", 50, 20, 4, 1);
                 default:
-                    return new Adversary("Inimigo Aleatório", 25, 14, 3, 2);
+                    return new Adversary("INIMIGO ALEATORIO", 25, 14, 3, 2);
             }
         } else if (nivel == 1) {
 
             switch (escolha2) {
                 case 0:
-                    return new Adversary("Orc Guerreiro", 60, 16, 5, 4);
+                    return new Adversary("OGRO BOMBADO", 60, 16, 5, 4);
                 case 1:
-                    return new Adversary("Demonio Corruptor", 70, 15, 14, 3);
+                    return new Adversary("CAPETA", 70, 15, 14, 3);
                 default:
-                    return new Adversary("Inimigo Aleatório", 25, 14, 3, 2);
+                    return new Adversary("INIMIGO ALEATORIO", 25, 14, 3, 2);
             }
         } else if (nivel == 2) {
 
             switch (escolha3) {
                 case 0:
-                    return new Adversary("Cavaleiro Infernal", 90, 40, 12, 10);
+                    return new Adversary("DARK W", 90, 40, 12, 10);
                 default:
-                    return new Adversary("Cavaleiro Infernal", 90, 40, 12, 10);
+                    return new Adversary("DARK W", 90, 40, 12, 10);
             }
         }
         return null;
     }
 
     private static void combate(Character character, Adversary adversary, Potion potion) {
-        System.out.println("\nIniciando combate contra " + adversary.getNome() + "!");
+        System.out.println("\nCOMBATE INICIADO COM " + adversary.getNome() + "!");
         Scanner scanner = new Scanner(System.in);
         int rodada = 1;
 
         while (true) {
-            System.out.println("Rodada " + rodada + "\n");
+            System.out.println("ROUND " + rodada + "\n");
             int agilidadeJogador = character.getAgilidade();
             int agilidadeAdversario = adversary.getAgilidade();
             potion.getPocoesDisponiveis();
@@ -269,32 +269,32 @@ public class JogoRPG {
             if (agilidadeJogador > agilidadeAdversario) {
                 turnoJogador(character, adversary, scanner, potion);
                 if (adversary.getPV() <= 0) {
-                    System.out.println("Você venceu o combate contra " + adversary.getNome() + "!");
+                    System.out.println("VOCÊ VENCEU " + adversary.getNome() + "!");
                     System.out.println("");
-                    System.out.println("Você recebeu uma poção!");
+                    System.out.println("VOCÊ GANHOU UMA POÇÃO!");
                     System.out.println("");
-                    System.out.println("Pressione Enter para continuar...\n");
+                    System.out.println("PRESSIONE ENTER PARA CONTINUAR...\n");
                     scanner.nextLine();
                     break;
                 }
 
                 turnoAdversario(character, adversary, scanner);
                 if (character.getPV() <= 0) {
-                    System.out.println(adversary.getNome() + " derrotou você! O jogo acabou.");
+                    System.out.println(adversary.getNome() + " DERROTOU VOCÊ.");
                     break;
                 }
             } else {
                 turnoAdversario(character, adversary, scanner);
                 if (character.getPV() <= 0) {
-                    System.out.println(adversary.getNome() + " derrotou você! O jogo acabou.");
+                    System.out.println(adversary.getNome() + " DERROTOU VOCÊ.");
                     break;
                 }
 
                 turnoJogador(character, adversary, scanner, potion);
                 if (adversary.getPV() <= 0) {
-                    System.out.println("Você venceu o combate contra " + adversary.getNome() + "!");
-                    System.out.println("Você recebeu uma poção!");
-                    System.out.println("Pressione Enter para continuar...\n");
+                    System.out.println("VOCÊ VENCEU DE " + adversary.getNome() + "!");
+                    System.out.println("VOCÊ GANHOU UMA POÇÃO!");
+                    System.out.println("PRESSIONE ENTER PARA CONTINUAR...\n");
                     scanner.nextLine();
                     break;
                 }
@@ -306,10 +306,10 @@ public class JogoRPG {
     }
 
     private static void turnoJogador(Character character, Adversary adversary, Scanner scanner, Potion potion) {
-        System.out.println("Agora é sua vez, o que deseja fazer?");
-        System.out.println("1. Atacar");
-        System.out.println("2. Defender");
-        System.out.println("3. Usar Poção");
+        System.out.println("O QUE DESEJA FAZER?");
+        System.out.println("1. ATACAR");
+        System.out.println("2. DEFENDER");
+        System.out.println("3. POÇÃO");
 
         int escolha = scanner.nextInt();
         int pocoesDisponiveis = potion.getPocoesDisponiveis();
@@ -319,27 +319,27 @@ public class JogoRPG {
                 int danoCausado = Math.max(0, character.calcularDano() - adversary.getDefesa());
                 if (danoCausado > 0) {
                     adversary.setPV(adversary.getPV() - danoCausado);
-                    System.out.println("Você causou " + danoCausado + " de dano em " + adversary.getNome() + "!");
+                    System.out.println("VOCÊ DEU " + danoCausado + " DE DANO NO " + adversary.getNome() + "!");
                 } else {
-                    System.out.println(adversary.getNome() + " se defendeu completamente!");
+                    System.out.println(adversary.getNome() + " SE DEFENDEU!");
                 }
                 break;
             case 2:
                 character.setDefesaDobrada(true);
-                System.out.println("Você está defendendo. Sua defesa dobrou por uma rodada.");
+                System.out.println("VOCE DEFENDEU, DEFESA DOBRADA NO PROXIMO ROUND.");
                 break;
             case 3:
                 if (pocoesDisponiveis > 0) {
                     int cura = rolarD6() + rolarD6() + rolarD6();
                     character.setPV(character.getPV() + cura);
                     pocoesDisponiveis--;
-                    System.out.println("Você usou uma poção e recuperou " + cura + " de vida.");
+                    System.out.println("VOCE RECUPEROU " + cura + " DA SUA VIDA.");
                 } else {
-                    System.out.println("Você não tem mais poções disponíveis.");
+                    System.out.println("ACABARAM AS POÇÕES.");
                 }
                 break;
             default:
-                System.out.println("Ação inválida. Tente novamente.");
+                System.out.println("AÇÃO INVALIDA");
         }
 
         if (character.isDefesaDobrada()) {
@@ -356,19 +356,19 @@ public class JogoRPG {
                 int danoCausado = Math.max(0, adversary.getDano() - character.calcularDefesa());
                 if (danoCausado > 0) {
                     character.setPV(character.getPV() - danoCausado);
-                    System.out.println(adversary.getNome() + " causou " + danoCausado + " de dano em você!");
+                    System.out.println(adversary.getNome() + " DEU " + danoCausado + " DE DANO!");
                 } else {
-                    System.out.println("Você se defendeu completamente contra o ataque de " + adversary.getNome() + "!");
+                    System.out.println("VOCE SE DEFENDEU DO ATAQUE DE " + adversary.getNome() + "!");
                 }
                 break;
             case 1:
                 adversary.setDefesaDobrada(true);
-                System.out.println(adversary.getNome() + " está defendendo. Sua defesa dobrou por uma rodada.");
+                System.out.println(adversary.getNome() + " ESTA DEFENDENDO, SUA DEFESA ESTA DOBRADA NO PROXIMO ROUND.");
                 break;
             case 2:
                 int cura = rolarD6() + rolarD6() + rolarD6();
                 adversary.setPV(adversary.getPV() + cura);
-                System.out.println(adversary.getNome() + " usou uma poção e recuperou " + cura + " de vida.");
+                System.out.println(adversary.getNome() + " USOU OUÇAO E CUROU" + cura + " DE VIDA.");
                 break;
         }
 
@@ -382,4 +382,3 @@ public class JogoRPG {
         return random.nextInt(6) + 1;
     }
 }
-
